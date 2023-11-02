@@ -54,7 +54,7 @@ const WorkoutForm = () => {
     <form className="create" onSubmit={handleSubmit}>
       <h3>Add a New Workout</h3>
 
-      <label>Excersize Title:</label>
+      <label>Exercise Title:</label>
       <input 
         type="text"
         onChange={(e) => setTitle(e.target.value)}
@@ -62,7 +62,7 @@ const WorkoutForm = () => {
         className={emptyFields.includes('title') ? 'error' : ''}
       />
 
-      <label>Load (in kg):</label>
+      <label>Weight (in kg):</label>
       <input 
         type="number"
         onChange={(e) => setLoad(e.target.value)}
